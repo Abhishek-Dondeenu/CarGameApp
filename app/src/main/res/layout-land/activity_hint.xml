@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_one"
+    tools:context=".HintActivity">
+
+    <ImageView
+        android:id="@+id/hint_image_view"
+        android:layout_width="284dp"
+        android:layout_height="212dp"
+        android:layout_margin="10dp"
+
+        android:layout_marginTop="40dp"
+        android:contentDescription="@string/hint_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.015"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/submit_text"
+        android:layout_width="379dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/halant_medium"
+        android:gravity="center_horizontal"
+        android:text="@string/hint_type_letter"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hint_title" />
+
+    <TextView
+        android:id="@+id/dash_text_view"
+        android:layout_width="190dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/halant_medium"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.855"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/submit_button" />
+
+    <EditText
+        android:id="@+id/hint_answer"
+        android:layout_width="234dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:autofillHints=""
+        android:background="@drawable/border"
+        android:ems="10"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:fontFamily="@font/halant_medium"
+        android:inputType="textPersonName"
+        android:maxLength="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.869"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/submit_text"
+        tools:ignore="LabelFor" />
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/Gold"
+        android:fontFamily="@font/nunito_sans_extrabold"
+        android:onClick="submitGuess"
+        android:tag=""
+        android:text="@string/submit_letter"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hint_answer"
+        tools:targetApi="lollipop" />
+
+    <TextView
+        android:id="@+id/hint_title"
+        android:layout_width="198dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/halant_medium"
+        android:gravity="center_horizontal"
+        android:text="@string/hint_title"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.838"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/hint_timer"
+        android:layout_width="79dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="84dp"
+        android:fontFamily="@font/halant_medium"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.184"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hint_image_view" />
+
+    <TextView
+        android:id="@+id/hint_correct_name_text"
+        android:layout_width="109dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/halant_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.808"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dash_text_view" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_one"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/identify_car_make_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/Gold"
+
+        android:fontFamily="@font/nunito_sans_extrabold"
+        android:onClick="identifyCarMake"
+        android:text="@string/identify_car_make"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2"
+        tools:targetApi="lollipop" />
+
+    <Button
+        android:id="@+id/hint_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:onClick="hintGame"
+        android:text="@string/hints"
+        android:fontFamily="@font/nunito_sans_extrabold"
+        android:backgroundTint="@color/Gold"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/identify_car_make_button"
+        tools:targetApi="lollipop"/>
+
+    <Button
+        android:id="@+id/advanced_button"
+        android:layout_width="215dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/advanced_level"
+        android:fontFamily="@font/nunito_sans_extrabold"
+        android:onClick="advancedLevel"
+        android:backgroundTint="@color/Gold"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/identify_car_image_button"
+        tools:targetApi="lollipop"/>
+
+    <Button
+        android:id="@+id/identify_car_image_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/identify_car_image"
+        android:fontFamily="@font/nunito_sans_extrabold"
+        android:onClick="identifyCarImage"
+        android:backgroundTint="@color/Gold"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hint_button"
+        tools:targetApi="lollipop"/>
+
+    <Switch
+        android:id="@+id/timerSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito_sans_extrabold"
+        android:layout_marginTop="40dp"
+        android:text="@string/switch_text"
+        android:background="@color/Gold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/advanced_button"
+        tools:ignore="UseSwitchCompatOrMaterialXml"
+        tools:targetApi="lollipop"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

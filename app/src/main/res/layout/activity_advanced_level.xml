@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_one"
+    tools:context=".AdvancedLevelActivity">
+
+    <TextView
+        android:fontFamily="@font/halant_medium"
+        android:id="@+id/correctAnswerTwo"
+        android:layout_width="102dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textBoxTwo" />
+
+    <TextView
+        android:fontFamily="@font/halant_medium"
+        android:id="@+id/correctAnswerThree"
+        android:layout_width="106dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textBoxThree" />
+
+    <TextView
+        android:id="@+id/advanced_level_text"
+        android:layout_width="188dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/halant_medium"
+        android:gravity="center_horizontal"
+        android:text="@string/advanced_level_title"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/firstImageView"
+        android:layout_width="189dp"
+        android:layout_height="106dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question_advanced_text"
+        android:contentDescription="@string/advanced_image_one" />
+
+    <ImageView
+        android:id="@+id/secondImageView"
+        android:layout_width="188dp"
+        android:layout_height="101dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstImageView"
+        android:contentDescription="@string/advanced_image_two" />
+
+    <ImageView
+        android:id="@+id/thirdImageView"
+        android:layout_width="191dp"
+        android:layout_height="107dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/secondImageView"
+        android:contentDescription="@string/advanced_image_three" />
+
+    <Button
+        android:id="@+id/advanced_submit_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:backgroundTint="@color/Gold"
+        android:fontFamily="@font/nunito_sans_extrabold"
+        android:onClick="submitAnswer"
+        android:tag=""
+        android:text="@string/submit_btn_text"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/correctAnswerThree"
+        tools:targetApi="lollipop" />
+
+    <TextView
+        android:id="@+id/question_advanced_text"
+        android:layout_width="334dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/halant_medium"
+        android:gravity="center_horizontal"
+        android:text="@string/advanced_level_question"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/advanced_level_text" />
+
+    <TextView
+        android:id="@+id/advanced_timer"
+        android:layout_width="111dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/halant_medium"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/thirdImageView" />
+
+    <EditText
+        android:background="@drawable/border"
+        android:id="@+id/textBoxOne"
+        android:fontFamily="@font/halant_medium"
+        android:layout_width="156dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question_advanced_text"
+        android:autofillHints=""
+        tools:ignore="LabelFor" />
+
+    <EditText
+        android:background="@drawable/border"
+        android:id="@+id/textBoxTwo"
+        android:layout_width="156dp"
+        android:layout_height="43dp"
+        android:fontFamily="@font/halant_medium"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/correctAnswerOne"
+        android:autofillHints=""
+        tools:ignore="LabelFor" />
+
+    <EditText
+        android:background="@drawable/border"
+        android:id="@+id/textBoxThree"
+        android:layout_width="156dp"
+        android:layout_height="43dp"
+        android:fontFamily="@font/halant_medium"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/correctAnswerTwo"
+        android:autofillHints=""
+        tools:ignore="LabelFor" />
+
+    <TextView
+        android:id="@+id/correctAnswerOne"
+        android:layout_width="109dp"
+        android:layout_height="34dp"
+        android:fontFamily="@font/halant_medium"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textBoxOne" />
+
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/scoreBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/halant_medium"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/score_box"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

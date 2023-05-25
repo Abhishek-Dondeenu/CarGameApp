@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Car Game</string>
+    <string name="identify_car_make">Identify the Car Make</string>
+    <string name="hints">Hints</string>
+    <string name="identify_image">Identify</string>
+    <string name="advanced_level">Advanced Level</string>
+    <string name="next_button_text">Next</string>
+    <string name="submit_letter">Submit</string>
+    <string name="car_mark_submit_answer">Refer to image above and select the correct car make from the list below and click the "Identify" Button to submit your answer:</string>
+    <string name="identify_car_make_title">Identify Car Make Game</string>
+    <string name="Identify_car_make_image">TODO</string>
+    <string name="identify_car_image">Identify the Car Image</string>
+    <string name="switch_text">Timer</string>
+    <string name="next_btn">Next</string>
+    <string name="identify_car_image_text">Identify Car Image Game</string>
+    <string name="car_image_question">Click a car image according to the given Car Make name, you have only one attempt.</string>
+    <string name="car_image_one">TODO</string>
+    <string name="car_image_two">TODO</string>
+    <string name="car_image_three">TODO</string>
+    <string name="hint_image">TODO</string>
+    <string name="hint_type_letter">Look at the give car image and Type a letter and tap on submit button to guess the car make </string>
+    <string name="hint_title">Hints Game</string>
+    <string name="advanced_level_title">Advanced Level</string>
+    <string name="submit_btn_text">Submit</string>
+    <string name="advanced_level_question">Guess the car manufacturer names of all the 3 displayed cars using the corresponding 3 text boxes.</string>
+    <string name="score_box">Score: 0</string>
+    <string name="advanced_image_one">TODO</string>
+    <string name="advanced_image_two">TODO</string>
+    <string name="advanced_image_three">TODO</string>
+    <string-array name="car_makes">
+        <item>Select Car Make</item>
+        <item>Audi</item>
+        <item>BMW</item>
+        <item>Ford</item>
+        <item>Honda</item>
+        <item>Toyota</item>
+        <item>Mercedes</item>
+    </string-array>
+</resources>

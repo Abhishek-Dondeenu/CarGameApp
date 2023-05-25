@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_one"
+    tools:context=".IdentifyCarImageActivity">
+
+    <ImageView
+        android:id="@+id/first_image_view"
+        android:layout_width="189dp"
+        android:layout_height="106dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="8dp"
+        android:onClick="firstImageCompare"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/identify_Car_Image_text"
+        android:contentDescription="@string/car_image_one" />
+
+    <ImageView
+        android:id="@+id/second_image_view"
+        android:layout_width="188dp"
+        android:layout_height="101dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="4dp"
+        android:onClick="secondImageCompare"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/first_image_view"
+        android:contentDescription="@string/car_image_two" />
+
+    <ImageView
+        android:id="@+id/third_image_view"
+        android:layout_width="191dp"
+        android:layout_height="107dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="4dp"
+        android:onClick="thirdImageCompare"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/second_image_view"
+        android:contentDescription="@string/car_image_three" />
+
+    <TextView
+        android:id="@+id/identify_Car_Image_text"
+        android:layout_width="222dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/halant_medium"
+        android:gravity="center_horizontal"
+        android:text="@string/identify_car_image_text"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/car_manufacturer_name"
+        android:layout_width="138dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/halant_medium"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question_text" />
+
+    <TextView
+        android:id="@+id/question_text"
+        android:layout_width="303dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/car_image_question"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/third_image_view" />
+
+    <TextView
+        android:id="@+id/identify_car_image_timer"
+        android:layout_width="79dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/halant_medium"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question_text" />
+
+    <Button
+        android:id="@+id/image_next_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="newGame"
+        android:text="@string/next_btn"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/nunito_sans_extrabold"
+        android:textColor="@color/black"
+        tools:targetApi="lollipop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.928"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/car_manufacturer_name"/>
+
+    <TextView
+        android:id="@+id/text_guide"
+        android:layout_width="129dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/halant_medium"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/car_manufacturer_name" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

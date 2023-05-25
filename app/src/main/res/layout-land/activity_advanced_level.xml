@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_one"
+    tools:context=".AdvancedLevelActivity">
+
+    <TextView
+        android:id="@+id/advanced_level_text"
+        android:layout_width="179dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/halant_medium"
+        android:gravity="center_horizontal"
+        android:text="@string/advanced_level_title"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/firstImageView"
+        android:layout_width="169dp"
+        android:layout_height="94dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="44dp"
+        android:contentDescription="@string/advanced_image_one"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.028"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/secondImageView"
+        android:layout_width="167dp"
+        android:layout_height="96dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/advanced_image_two"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.029"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstImageView" />
+
+    <ImageView
+        android:id="@+id/thirdImageView"
+        android:layout_width="168dp"
+        android:layout_height="97dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="4dp"
+        android:contentDescription="@string/advanced_image_three"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.029"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/secondImageView" />
+
+    <Button
+        android:id="@+id/advanced_submit_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/Gold"
+        android:fontFamily="@font/nunito_sans_extrabold"
+        android:onClick="submitAnswer"
+        android:tag=""
+        android:text="@string/submit_btn_text"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.86"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question_advanced_text"
+        tools:targetApi="lollipop" />
+
+    <TextView
+        android:id="@+id/question_advanced_text"
+        android:layout_width="275dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="84dp"
+        android:fontFamily="@font/halant_medium"
+        android:gravity="center_horizontal"
+        android:text="@string/advanced_level_question"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/advanced_timer"
+        android:layout_width="111dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/halant_medium"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.883"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/advanced_submit_btn"
+        app:layout_constraintVertical_bias="0.476" />
+
+    <EditText
+        android:id="@+id/textBoxOne"
+        android:layout_width="156dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="304dp"
+        android:layout_marginRight="304dp"
+        android:autofillHints=""
+        android:background="@drawable/border"
+        android:ems="10"
+        android:fontFamily="@font/halant_medium"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="LabelFor" />
+
+    <TextView
+        android:id="@+id/correctAnswerOne"
+        android:layout_width="109dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="324dp"
+        android:layout_marginRight="324dp"
+        android:fontFamily="@font/halant_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textBoxOne" />
+
+    <TextView
+        android:id="@+id/correctAnswerTwo"
+        android:layout_width="102dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="332dp"
+        android:layout_marginRight="332dp"
+        android:fontFamily="@font/halant_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textBoxTwo" />
+
+    <EditText
+        android:id="@+id/textBoxThree"
+        android:layout_width="156dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="300dp"
+        android:layout_marginRight="300dp"
+        android:autofillHints=""
+        android:background="@drawable/border"
+        android:ems="10"
+        android:fontFamily="@font/halant_medium"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/correctAnswerTwo"
+        tools:ignore="LabelFor" />
+
+    <TextView
+        android:id="@+id/correctAnswerThree"
+        android:layout_width="106dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="328dp"
+        android:layout_marginRight="328dp"
+        android:fontFamily="@font/halant_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textBoxThree" />
+
+    <EditText
+        android:id="@+id/textBoxTwo"
+        android:layout_width="156dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="300dp"
+        android:layout_marginRight="300dp"
+        android:autofillHints=""
+        android:background="@drawable/border"
+        android:ems="10"
+        android:fontFamily="@font/halant_medium"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/correctAnswerOne"
+        tools:ignore="LabelFor" />
+
+    <TextView
+        android:id="@+id/scoreBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:fontFamily="@font/halant_medium"
+        android:text="@string/score_box"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
